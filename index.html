@@ -5,55 +5,314 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <!-- You MUST include jQuery before Fomantic -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.3/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.3/dist/semantic.min.js"></script>
     <title>L Tenzil</title>
-    <meta name="description" content="L Tenzil, Senior Ruby on Rails ">
+    <meta name="description" content="L Tenzil, Ruby, Ruby on Rails, Elixir, Phoenix, Web developer. ">
+    <style type="text/css">
+      body {
+        background-color: #DADADA;
+      }
+    </style>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="jumbotron p-4 text-white rounded bg-dark">
-        <div class="row">
-          <div class="col-md-3">
-            <img src="https://media.licdn.com/dms/image/C5103AQEnBf9bLWtR8w/profile-displayphoto-shrink_200_200/0?e=1557964800&v=beta&t=Dma9PHVUnzqAb4g-EWyPbJn1bTNlnq_05WQVi0VAmMc" class="rounded" />
+    <div class="ui grid centered padded">
+      <!-- <div class="four wide column">
+        <div class="ui horizontal cards">
+        <div class="ui card">
+          <div class="image">
+            <img src="images/card-image.jpg">
           </div>
-          <div class="col-md-9">
-            <h1 class="display-4 font-italic">L Tenzil</h1>
-            <h3 class="display-5 font-italic">Senior Ruby on Rails Developer</h3>
-            <p class="lead my-3">
-              Web developer with 5+ years of experience in web development
-            </p>
-            <div class="mb-0">
-              <div class="row">
-                <div class="col-md-1">
-                  Email:
-                </div>
-                <div class="col-md-11">
-                  <a href="mailto:mr.tenzil@gmail.com" class="text-white">mr.tenzil@gmail.com</a>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-1">
-                  Phone:
-                </div>
-                <div class="col-md-11">
-                  <span class="text-white">7356826761</span>
-                </div>
-              </div>
-            <!-- <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+          <div class="content">
+            <a class="header">L Tenzil</a>
+            <div class="meta">
+              <a>Ruby, Ruby on Rails, Elixir, Phoenix, Web Developer</a>
+            </div>
+            <div class="description">
+              Matthew is an interior designer living in New York.
+            </div>
+          </div>
+          <div class="extra content">
+            <span class="left floated">
+              <i class="laptop code icon"></i>
+              5+ years of Exp. in Ruby on Rails 
+            </span>
+ <a>
+              <i class="user icon"></i>
+              Experience in Ruby on Rails
+            </a> 
           </div>
         </div>
-      </div>
-      </div>
-      <div class="jumbotron rounded bg-light">
+      </div> end of horizontal cards 
+      </div> -->
+      <div class="ten wide computer twelve wide tablet sixteen wide mobile column">
+        <div class="ui segment">
+          <div class="ui items">
+            <div class="item">
+              <div class="image rounded">
+                <img src="images/card-image.jpg">
+              </div>
+              <div class="content">
+                <a class="header">L Tenzil</a>
+                <div class="meta">
+                  <span>Senior Ruby, Ruby on Rails, Web Developer. Junior Elixir & Phoenix.</span>
+                </div>
+                <div class="description">
+                  <p>
+                    <span class="">
+                      <i class="laptop code icon"></i>
+                      5+ years of experience in Ruby on Rails 
+                    </span>
+                  </p>
+                </div>
+                <div class="extra">
+                  Additional Details
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui segment">
+          <h2 class="ui dividing header">
+            <i class="toolbox icon"></i>
+            <div class="content">
+              Skills
+            </div>
+          </h2>
+          <div class="extra content">
+            <div class="ui two column grid">
+              <div class="row">
+                <div class="column ui very relaxed list">
+                  <div class="item">
+                    <!-- <img class="ui tiny image" src="images/ruby-logo.png"> -->
+                    <div class="content">
+                      <a class="header">Ruby</a>
+                      <div class="description">
+                        Fell in love with Ruby in 2014, Since then working in it.
+                      </div>
+                    </div>
+                    <!-- <div class="ui tiny teal progress" data-percent="74" id="ruby">
+                      <div class="bar"></div>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="column ui very relaxed list">
+                  <div class="item">
+                    <!-- <img class="ui small image" src="images/rails-logo.svg"> -->
+                    <div class="content">
+                      <a class="header">Ruby on Rails</a>
+                      <div class="description">Have extensively worked on ROR projects, from version 3 to 5, Doing some pet projects in version 6</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column ui very relaxed list">
+                  <div class="item">
+                    <!-- <img class="ui avatar image" src="/images/avatar/small/daniel.jpg"> -->
+                    <div class="content">
+                      <a class="header">Database</a>
+                      <div class="description">Postgresql</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column ui very relaxed list">
+                  <div class="item">
+                    <!-- <img class="ui avatar image" src="/images/avatar/small/daniel.jpg"> -->
+                    <div class="content">
+                      <a class="header">AWS</a>
+                      <div class="description">EC2, ELB, S3, Route53, SES, Involved in deployment activities</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column ui very relaxed list">
+                  <div class="item">
+                    <!-- <img class="ui avatar tiny image" src="/images/avatar/small/daniel.jpg"> -->
+                    <div class="content">
+                      <a class="header">HTML, Javascript and CSS</a>
+                      <div class="description">Worked on Jquery, HAML and SLIM template engines.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column ui very relaxed list">
+                  <div class="item">
+                    <!-- <img class="ui avatar image" src="/images/avatar/small/daniel.jpg"> -->
+                    <div class="content">
+                      <a class="header">UI frameworks</a>
+                      <div class="description">Zurb Foundation, Semantic UI, Bootstrap</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column ui very relaxed list">
+                  <div class="item">
+                    <!-- <img class="ui avatar image" src="/images/avatar/small/daniel.jpg"> -->
+                    <div class="content">
+                      <a class="header">Project Management Tools</a>
+                      <div class="description">Have used Rally, JIRA, Trello</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column ui very relaxed list">
+                  <div class="item">
+                    <!-- <img class="ui avatar image" src="/images/avatar/small/daniel.jpg"> -->
+                    <div class="content">
+                      <a class="header">Version Control</a>
+                      <div class="description">GIT, SVN</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <h2 class="ui dividing header">
+              Learning currently
+            </h2>
+            <div class="ui two column grid">  
+              <div class="row">
+                <div class="column ui very relaxed list">
+                  <div class="item">
+                    <!-- <img class="ui avatar image" src="/images/avatar/small/daniel.jpg"> -->
+                    <div class="content">
+                      <a class="header">Elixir</a>
+                      <div class="description">
+                        Post ruby, elixir stole my heart with its elegent style and pace. Building pet projects and learning it. 
+                      </div>
+                    </div>
+                    <!-- <div class="ui tiny teal progress" data-percent="54" id="elixir">
+                      <div class="bar"></div>
+                    </div> -->
+                  </div>
+                </div>
+                <div class="column ui very relaxed list">
+                  <div class="item">
+                    <!-- <img class="ui avatar image" src="/images/avatar/small/daniel.jpg"> -->
+                    <div class="content">
+                      <a class="header">Phoenix</a>
+                      <div class="description">The Rails for elixir, using it to build web applications.</div>
+                    </div>
+                    <!-- <div class="ui tiny teal progress" data-percent="54" id="phoenix">
+                      <div class="bar"></div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <h2 class="ui sub  dividing header">
+                    In the Pipeline
+                  </h2>
+                </div> 
+              </div>
+
+              <div class="row">
+                <div class="column ui very relaxed list">
+                  <div class="item">
+                    <!-- <img class="ui avatar image" src="/images/avatar/small/daniel.jpg"> -->
+                    <div class="content">
+                      <a class="header">Frontend Frameworks</a>
+                      <div class="description">Vuejs</div>
+                    </div>
+                    <!-- <div class="ui tiny teal progress" data-percent="54" id="elixir">
+                      <div class="bar"></div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="ui segment">
+          <h2 class="ui dividing header">
+            <i class="suitcase icon"></i>
+            <div class="content">
+              Employment
+            </div>
+          </h2>
+
+          <div class="extra content">
+            <div class="container">
+              <div class="ui warning message">
+                <div class="header">
+                  <a href="https://www.imaginea.com/" target="_blank">Pramati Technologies, Imaginea</a>
+                </div>
+                <div class="ui list">
+                  <div class="item">
+                    <i class="calendar alternate outline icon"></i>
+                    <div class="content">
+                      From September 2017 till date.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <i class="map marker alternate icon"></i>
+                    <div class="content">
+                      Chennai, TamilNadu, India
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ui message">
+                <div class="header">
+                  Webonise Labs
+                </div>
+                <p>Senior Software Engineer from May 2015 to September 2017.</p>
+              </div>
+
+              <div class="ui message">
+                <div class="header">
+                  Arrk Solutions
+                </div>
+                <p>Software Engineer from February 2014 to April 2015.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui segment">
+          <h2 class="ui dividing header">
+            <i class="university icon"></i>
+            <div class="content">
+              Education
+            </div>
+          </h2>
+        </div>
+
+        <div class="ui segment">
+          <h2 class="ui dividing header">
+            <i class="university icon"></i>
+            <div class="content">
+              Awards & Achievements
+            </div>
+          </h2>
+        </div>
+
+        <div class="ui segment">
+          <h2 class="ui dividing header">
+            <i class="puzzle piece icon"></i>
+            <div class="content">
+              Hobbies & Interests
+            </div>
+          </h2>
+        </div>
+
       </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
