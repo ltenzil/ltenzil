@@ -7,7 +7,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <!-- You MUST include jQuery before Fomantic -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.3/dist/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.3/dist/semantic.min.js"></script>
     <title>L Tenzil</title>
@@ -20,34 +19,6 @@
   </head>
   <body>
     <div class="ui grid centered padded">
-      <!-- <div class="four wide column">
-        <div class="ui horizontal cards">
-        <div class="ui card">
-          <div class="image">
-            <img src="images/card-image.jpg">
-          </div>
-          <div class="content">
-            <a class="header">L Tenzil</a>
-            <div class="meta">
-              <a>Ruby, Ruby on Rails, Elixir, Phoenix, Web Developer</a>
-            </div>
-            <div class="description">
-              Matthew is an interior designer living in New York.
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="left floated">
-              <i class="laptop code icon"></i>
-              5+ years of Exp. in Ruby on Rails 
-            </span>
- <a>
-              <i class="user icon"></i>
-              Experience in Ruby on Rails
-            </a> 
-          </div>
-        </div>
-      </div> end of horizontal cards 
-      </div> -->
       <div class="ten wide computer twelve wide tablet sixteen wide mobile column">
         <div class="ui segment">
           <div class="ui items">
@@ -58,7 +29,11 @@
               <div class="content">
                 <a class="header">L Tenzil</a>
                 <div class="meta">
-                  <span>Senior Ruby, Ruby on Rails, Web Developer. Junior Elixir & Phoenix.</span>
+                  <div class="ui horizontal list">
+                    <div class="item"><a class="ui label">Web & Product Developer</a></div>
+                    <div class="item"><a class="ui label">Senior Ruby, Ruby on Rails</a></div>
+                    <div class="item"><a class="ui label">Junior Elixir & Phoenix</a></div>
+                  </div>
                 </div>
                 <div class="description">
                   <p>
@@ -69,7 +44,6 @@
                   </p>
                 </div>
                 <div class="extra">
-                  Additional Details
                   
                 </div>
               </div>
@@ -177,9 +151,10 @@
             </div>
 
 
-            <h2 class="ui dividing header">
+            <h2 class="ui sub dividing header">
               Learning currently
             </h2>
+            <br>
             <div class="ui two column grid">  
               <div class="row">
                 <div class="column ui very relaxed list">
@@ -209,15 +184,13 @@
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="row">
-                <div class="column">
-                  <h2 class="ui sub  dividing header">
-                    In the Pipeline
-                  </h2>
-                </div> 
-              </div>
-
+            <h2 class="ui sub dividing header">
+              In the Pipeline
+            </h2>
+            <br>
+            <div class="ui two column grid">  
               <div class="row">
                 <div class="column ui very relaxed list">
                   <div class="item">
@@ -232,8 +205,6 @@
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -331,11 +302,11 @@
                 </div>
                 <div class="ui list">
                   <div class="item">
-                      <i class="asterisk icon"></i>
-                      <div class="content">
-                        <strong>Software Engineer</strong>
-                      </div>
+                    <i class="asterisk icon"></i>
+                    <div class="content">
+                      <strong>Software Engineer</strong>
                     </div>
+                  </div>
                   <div class="item">
                     <i class="calendar alternate outline icon"></i>
                     <div class="content">
@@ -371,10 +342,21 @@
                       <div class="description">
                         <div class="ui list">
                           <div class="item">
-                            Bachelor of Technology (B.Tech.), B.Tech[I.T]
+                            <i class="small asterisk icon"></i>
+                            <div class="content">
+                              Bachelor of Technology (B.Tech.), B.Tech[I.T]
+                            </div>
                           </div>
-                          <div class="item">2008-2012</div>
-                          <div class="item">Tirunelveli, TamilNadu, India</div>
+                          <div class="item">
+                            <i class="calendar alternate outline icon"></i> 
+                            <div class="content">2008-2012</div>
+                          </div>
+                          <div class="item">
+                            <i class="map marker alternate icon"></i>
+                            <div class="content">
+                              Tirunelveli, TamilNadu, India
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -388,10 +370,21 @@
                       <div class="description">
                         <div class="ui list">
                           <div class="item">
-                            Higher Secondary Mathematics and Biology
+                            <i class="small asterisk icon"></i>
+                            <div class="content">
+                              Higher Secondary Mathematics and Biology
+                            </div>
                           </div>
-                          <div class="item">2006-2008</div>
-                          <div class="item">Tirunelveli, TamilNadu, India</div>
+                          <div class="item">
+                            <i class="calendar alternate outline icon"></i> 
+                            <div class="content">2006-2008</div>
+                          </div>
+                          <div class="item">
+                            <i class="map marker alternate icon"></i>
+                            <div class="content">
+                              Tirunelveli, TamilNadu, India
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -499,6 +492,79 @@
               Hobbies & Interests
             </div>
           </h2>
+
+          <div class="extra content">
+            <div class="ui three column stackable grid">
+              <div class="column">
+                <div class="ui fluid card">
+                  <div class="image">
+                    <img src="images/futsal.jpg" style="height:153px">
+                  </div>
+                  <div class="content">
+                    <a class="header">Sports</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="ui card">
+                  <div class="image">
+                    <img src="images/foodie.jpg" style="height:153px">
+                  </div>
+                  <div class="content">
+                    <a class="header">Foodie</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="ui card">
+                  <div class="ui slide masked reveal image">
+                    <img src="images/bike-ride.jpg" style="height:153px" class="visible content">
+                    <img src="images/cyclin.jpg" style="height:153px" class="hidden content">
+                  </div>
+                  <div class="content">
+                    <a class="header">Rider</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="ui card">
+                  <div class="image">
+                    <img src="images/culture.jpg" style="height:153px">
+                  </div>
+                  <div class="content">
+                    <a class="header">Culture</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="ui card">
+                  <div class="ui slide masked reveal image">
+                    <img src="images/taj.jpg" style="height:153px" class="visible content">
+                    <img src="images/hyd.jpg" style="height:153px" class="hidden content">
+                  </div>
+                  <div class="content">
+                    <a class="header">Traveller</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="ui fluid card">
+                  <div class="ui slide masked reveal image">
+                    <img class="visible content" src="images/cycling.jpg" style="height:153px">
+                    <img src="images/river-trek.jpg" style="height:153px" class="hidden content">
+                  </div>
+                  <div class="content">
+                    <a class="header">Hiking & Trekking</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
